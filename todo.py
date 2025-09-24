@@ -13,7 +13,7 @@ def load_tasks():
 
 def save_tasks(tasks):
     with open(FILE_NAME, "w") as f:
-        json.dump(tasks, f)
+        json.dump(tasks, f, indent=2)
 
 def add_task(task):
     if not task.strip():
